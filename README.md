@@ -37,7 +37,7 @@ Now, it is also possible to calculate the area of the results hull polygon. The 
 
 <img src="https://render.githubusercontent.com/render/math?math=A=\sum_{i = 1}^{m-1} X_{i}*Y_{i+1}">
 
-<img src="https://render.githubusercontent.com/render/math?math=B=\sum_{i = 1}^{m-1} X_{i+1}*Y_{i}">
+<img src="https://render.githubusercontent.com/render/math?math=B=\sum_{i = 1}^{m-1} X_{(i+1)}*Y_{i}">
 
 <img src="https://render.githubusercontent.com/render/math?math=Polygon Area=\frac{A-B}{2}">
 
