@@ -13,7 +13,7 @@ Boundary illustration
 
 Illustration examples
 
-<br />These properties converted into an equations, which can be developed into our **invalid function**:
+<pre> These properties converted into an equations, which can be developed into our **invalid function**:
 
 Equations
 
