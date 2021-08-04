@@ -44,10 +44,18 @@ Now, it is also possible to calculate the area of the results hull polygon. The 
 Also, the results of the algorithm can also be generated as an output plot, in a simple using of built-in function:
 
 ``` sh
+# load libraries:
+import numpy as np
+from ch import ConvexH
 
+# create xy coordinates:
+points = np.random.normal(0,1,(100,2))
+
+# calculate convex-hull & plot results:
+ConvexH(points).plot()
 ```
 
-picture
+![plot](https://github.com/EtzionR/My-Convex-Hull/blob/main/pictures/plot.png)
 
 
 ## Libraries
