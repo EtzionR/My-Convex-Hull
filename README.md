@@ -39,7 +39,7 @@ Now, it is also possible to calculate the area of the results hull polygon. The 
 
 <img src="https://render.githubusercontent.com/render/math?math=B=\sum_{i = 1}^{m-1} X_{i+1}*Y_{i}">
 
-<img src="https://render.githubusercontent.com/render/math?math=Polygon_Area=\frac{A-B}{2}">
+<img src="https://render.githubusercontent.com/render/math?math=Polygon Area=\frac{A-B}{2}">
 
 Also, the results of the algorithm can also be generated as an output plot, in a simple using of built-in function:
 
