@@ -13,7 +13,7 @@ The algorithm works by **Four** steps:
 
 &emsp;&emsp; ![better_path](https://github.com/EtzionR/My-Convex-Hull/blob/main/pictures/better.png)
 
-&emsp;&emsp;As you can see, the slope between point 7 to 9 is lower then the slope between 7 to 8. This is why we choose to remove point 8 from the hull.
+&emsp;&emsp;As you can see, the slope between point 7 to 9 is lower then the slope between 7 to 8. So we choose to remove point 8 from the hull.
 
 &emsp;&emsp;These properties converted into an equations, which can be developed into our **invalid function**: 
 
