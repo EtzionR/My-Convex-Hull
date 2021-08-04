@@ -17,11 +17,13 @@ The algorithm works by **Four** steps:
 
 &emsp;&emsp;These properties converted into an equations, which can be developed into our **invalid function**: 
 
-&emsp;&emsp;<img src="https://render.githubusercontent.com/render/math?math=\frac{Y_{3}-Y_{1}}{\X_{3}-X_{1}}\leq\frac{Y_{2}-Y_{1}}{\X_{2}-X_{1}}">
+&emsp;&emsp;<img src="https://render.githubusercontent.com/render/math?math=\frac{Y_{2}-Y_{0}}{\X_{2}-X_{0}}\leq\frac{Y_{1}-Y_{0}}{\X_{1}-X_{0}}">
 
 &emsp;&emsp; Which equal to: 
 
-&emsp;&emsp;<img src="https://render.githubusercontent.com/render/math?math=\leq(Y_{2}-Y_{1})*(X_{3}-X_{1})">
+&emsp;&emsp;<img src="https://render.githubusercontent.com/render/math?math=(Y_{2}-Y_{0})*(X_{1}-X_{0})\leq(Y_{1}-Y_{0})*(X_{2}-X_{0})">
+
+&emsp;&emsp; When in our example, point 7 = (x0,y0),point 8 = (x1,y1) & point 9 = (x2,y2)
 
 - After the calculation of the top & bottom hulls, all we need is **merge** them to one final hull.
 
