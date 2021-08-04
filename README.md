@@ -7,7 +7,7 @@ The algorithm works by **Four** steps:
 
 - Now, we will **divide the calculation**, so that it focuses on a different hull each time, once on the top and once on the bottom, as follows:
 
-Boundary illustration
+&emsp;&emsp; ![upperlower](https://github.com/EtzionR/My-Convex-Hull/blob/main/pictures/upperlower.png)
 
 - We perform the calculation for each such sub-boundary (hull). In order to verify that this we take the desired path, we use **invalid function** (lambda function). This function identifies for each point if there is a better route to it. When a "better path" means relativity lower slope than the slope to the previous point. You can see such example in the following figure:
 
