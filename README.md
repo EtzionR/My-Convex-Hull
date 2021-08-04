@@ -2,18 +2,25 @@
 Convex Hull Algorithm, build from scratch ,using the Monotone-Chain method.
 
 ## Overview
+The algorithm works by **Four** steps:
 - In order to get the boundary around our 2D points, we must first **sorting** the points, using to their X values.
-Now, we will divide the calculation so that it focuses on a different **hull** each time, once on the top and once on the bottom, as follows:
+
+- Now, we will **divide the calculation**, so that it focuses on a different hull each time, once on the top and once on the bottom, as follows:
 
 Boundary illustration
 
-Now, we will go over each such sub-boundary and perform the calculation on it. In order to verify that this is indeed the desired delimitation, a invalid function was constructed, which identifies cases in which lambda function is attached to the delimitation points. The function works so that it checks for each point if there is a better route to it. When a better trajectory is characterized by a lower slope than the slope relative to the previous point, as can be seen in the following figure:
+- We perform the calculation for each such sub-boundary (hull). In order to verify that this we take the desired path, we use **invalid function** (lambda function). This function identifies for each point if there is a better route to it. When a "better path" means relativity lower slope than the slope to the previous point. You can see such example in the following figure:
 
 Illustration examples
 
-These properties can of course be converted into an equation, which can be developed into the Invalid function used:
+  These properties converted into an equations, which can be developed into our **invalid function**:
 
 Equations
+
+- After the calculation of the top & bottom hulls, all we need is **merge** them to one final hull.
+
+444444
+
 
 It should be noted that the example is given from the calculation of the lower limit. The function also works in the upper limit calculation, where there is the fact that we are operating on the reverse list. The inversion of the coordinates ensures a negative denominator in the slope always, which makes the left slope negative and the right positive if there is a better trajectory.
 
