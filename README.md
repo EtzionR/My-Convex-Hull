@@ -21,7 +21,7 @@ The algorithm works by **Four** steps:
 
 &emsp;&emsp; Which equal to: 
 
-&emsp;&emsp; \leq(Y_{2}-Y_{1})*(X_{3}-X_{1})
+&emsp;&emsp;<img src="https://render.githubusercontent.com/render/math?math=\leq(Y_{2}-Y_{1})*(X_{3}-X_{1})">
 
 - After the calculation of the top & bottom hulls, all we need is **merge** them to one final hull.
 
