@@ -17,7 +17,7 @@ The algorithm works by **Four** steps:
 
 &emsp;&emsp;These properties converted into an equations, which can be developed into our **invalid function**: 
 
-Equations
+<img src="https://render.githubusercontent.com/render/math?math=S({x_{i}}) = \frac{x_{3}-x_{1}}{\x_{3}-x_{1}}">
 
 - After the calculation of the top & bottom hulls, all we need is **merge** them to one final hull.
 
