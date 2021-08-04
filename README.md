@@ -94,6 +94,7 @@ hull = ConvexH(points).vertex
 ```
 
 When the variables displayed are:
+
 **points:** list or array of 2D x,y coordinates
 
 ## License
