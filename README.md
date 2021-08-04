@@ -11,7 +11,7 @@ The algorithm works by **Four** steps:
 
 - We perform the calculation for each such sub-boundary (hull). In order to verify that this we take the desired path, we use **invalid function** (lambda function). This function identifies for each point if there is a better route to it. When a "better path" means relativity lower slope than the slope to the previous point. You can see such example in the following figure:
 
-Illustration examples
+&emsp;&emsp; ![better_path](https://github.com/EtzionR/My-Convex-Hull/blob/main/pictures/better.png)
 
 &emsp;&emsp;These properties converted into an equations, which can be developed into our **invalid function**: 
 
