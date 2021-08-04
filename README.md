@@ -35,7 +35,11 @@ You can also see a simple example of how the calculation is done:
 
 Now, it is also possible to calculate the area of the results hull polygon. The calculation is performed using the following equations, which are used to calculate an irregular polygon area:
 
-Equations
+<img src="https://render.githubusercontent.com/render/math?math= A = \sum_{i = 1}^{m-1} X_{i}*Y_{i+1}">
+
+<img src="https://render.githubusercontent.com/render/math?math= B = \sum_{i = 1}^{m-1} X_{i+1}*Y_{i}">
+
+<img src="https://render.githubusercontent.com/render/math?math= Polygon Area = \frac{A+B}{2}">
 
 Also, the results of the algorithm can also be generated as an output plot, in a simple using of built-in function:
 
