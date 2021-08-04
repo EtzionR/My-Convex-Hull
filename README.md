@@ -19,20 +19,17 @@ Equations
 
 - After the calculation of the top & bottom hulls, all we need is **merge** them to one final hull.
 
-444444
-
-
-It should be noted that the example is given from the calculation of the lower limit. The function also works in the upper limit calculation, where there is the fact that we are operating on the reverse list. The inversion of the coordinates ensures a negative denominator in the slope always, which makes the left slope negative and the right positive if there is a better trajectory.
-
-Now, it is also possible to calculate the area of the generated polygon. The calculation is performed using the following equations, which are used to calculate an irregular polygon area:
-
-Equations
+It should be noted that the given example describe calculation of the lower hull. The function also works in the upper case, because we using reverse points list. The order of the coordinates ensures a negative denominator in the slope equation. So the denominator makes the left slope negative and the right positive if there is a better path.
 
 You can also see a simple example of how the calculation is done:
 
 ?
 
-Also, the results of the algorithm can also be generated as an output in a simple way using a built-in function:
+Now, it is also possible to calculate the area of the results hull polygon. The calculation is performed using the following equations, which are used to calculate an irregular polygon area:
+
+Equations
+
+Also, the results of the algorithm can also be generated as an output plot, in a simple using of built-in function:
 
 ``` sh
 
