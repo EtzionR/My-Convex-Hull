@@ -29,17 +29,19 @@ The algorithm works by **Four** steps:
 
 It should be noted that the given example describe calculation of the lower hull. The function also works in the upper case, because we using reverse points list. The order of the coordinates ensures a negative denominator in the slope equation. So the denominator makes the left slope negative and the right positive if there is a better path.
 
-You can also see a simple example of how the calculation is done:
+You can also see a simple example of how the calculation is done, in each step of building the hull:
 
-?
+![convex_gif](https://github.com/EtzionR/My-Convex-Hull/blob/main/pictures/convex.gif)
 
 Now, it is also possible to calculate the area of the results hull polygon. The calculation is performed using the following equations, which are used to calculate an irregular polygon area:
 
-<img src="https://render.githubusercontent.com/render/math?math=A=\sum_{i = 1}^{m-1} X_{i}*Y_{i+1}">
+<img src="https://render.githubusercontent.com/render/math?math=A=\sum_{i = 1}^{m-1} X_{i}*Y_{j}">
 
-<img src="https://render.githubusercontent.com/render/math?math=B=\sum_{i = 1}^{m-1} X_{1+i}*Y_{i}">
+<img src="https://render.githubusercontent.com/render/math?math=B=\sum_{i = 1}^{m-1} X_{j}*Y_{i}">
 
 <img src="https://render.githubusercontent.com/render/math?math=Polygon Area=\frac{A-B}{2}">
+
+When j=i+1, m = length of the hull and X&Y coordinates of the hull
 
 Also, the results of the algorithm can also be generated as an output plot, in a simple using of built-in function:
 
@@ -56,7 +58,6 @@ ConvexH(points).plot()
 ```
 
 ![plot](https://github.com/EtzionR/My-Convex-Hull/blob/main/pictures/plot.png)
-
 
 ## Libraries
 The code uses the following library in Python:
@@ -75,14 +76,19 @@ the examples outputs are also attached here.
 ## Example for using the code
 To use this code, you just need to import it as follows:
 ``` sh
+# load libraries:
+import numpy as np
+from ch import ConvexH
 
+# create xy coordinates:
+points = np.random.normal(0,1,(100,2))
+
+# calculate convex-hull get the hull boundary:
+hull = ConvexH(points).vertex
 ```
 
 When the variables displayed are:
-
-**data:** explanation
-
-
+**points:** list or array of 2D x,y coordinates
 
 ## License
 MIT © [Etzion Harari](https://github.com/EtzionData)
