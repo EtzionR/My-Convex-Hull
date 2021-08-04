@@ -1,8 +1,9 @@
-# My-Convex-Hull
-Convex Hull Algorithm,  build from scratch , using the Monotone-Chain method.
+## My-Convex-Hull
+Convex Hull Algorithm, build from scratch ,using the Monotone-Chain method.
 
-In order to get the boundary around our 2D points, we must first filter the points, according to their X values.
-Now, we will divide the calculation so that it focuses on a different HULL each time, once on the top and once on the bottom, as follows:
+## Overview
+- In order to get the boundary around our 2D points, we must first **sorting** the points, using to their X values.
+Now, we will divide the calculation so that it focuses on a different **hull** each time, once on the top and once on the bottom, as follows:
 
 Boundary illustration
 
