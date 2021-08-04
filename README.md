@@ -17,7 +17,7 @@ The algorithm works by **Four** steps:
 
 &emsp;&emsp;These properties converted into an equations, which can be developed into our **invalid function**: 
 
-<img src="https://render.githubusercontent.com/render/math?math= \frac{Y_{3}-Y_{1}}{\X_{3}-X_{1}} <= \frac{Y_{2}-Y_{1}}{\X_{2}-X_{1}}">
+<img src="https://render.githubusercontent.com/render/math?math=  \frac{Y_{3}-Y_{1}}{\X_{3}-X_{1}}  \leq \frac{Y_{2}-Y_{1}}{\X_{2}-X_{1}} ">
 
 - After the calculation of the top & bottom hulls, all we need is **merge** them to one final hull.
 
