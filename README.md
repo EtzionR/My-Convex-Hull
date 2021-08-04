@@ -41,9 +41,13 @@ Now, it is also possible to calculate the area of the results hull polygon. The 
 
 <img src="https://render.githubusercontent.com/render/math?math=Polygon Area=\frac{A-B}{2}">
 
-When j=i+1, m = length of the hull and X&Y coordinates of the hull
+When j=i+1, m = length of the hull and X&Y coordinates of the hull.
 
-Also, the results of the algorithm can also be generated as an output plot, in a simple using of built-in function:
+You can see example to area calculation in the following figure. It describe Convex-Hull boundary that created around point that sampled inside Unit-Circle. The actual area of the polygon should be close to pi (3.14) and we can see that the calculate area we get is 3.12:
+
+![area](https://github.com/EtzionR/My-Convex-Hull/blob/main/pictures/area.png)
+
+The Convex-Hull object also can also generated as an output plot of the results, in a simple using of the built-in function:
 
 ``` sh
 # load libraries:
