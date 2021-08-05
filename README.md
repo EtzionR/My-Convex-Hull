@@ -33,7 +33,7 @@ It should be noted that the given example describe calculation of the lower hull
 
 You can also see a simple example of how the calculation is done, in each step of building the hull:
 
-![convex_gif](https://github.com/EtzionR/My-Convex-Hull/blob/main/pictures/convex.gif)
+![convex_gif](https://github.com/EtzionR/My-Convex-Hull/blob/main/pictures/convex_process.gif)
 
 Now, it is also possible to calculate the area of the results hull polygon. The calculation is performed using the following equations, which are used to calculate an irregular polygon area:
 
