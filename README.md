@@ -4,7 +4,7 @@ Convex Hull Algorithm, build from scratch ,using the Monotone-Chain method.
 ## Overview
 The code [**ch.py**](https://github.com/EtzionR/My-Convex-Hull/blob/main/ch.py) is version of the convex hull algorithm that build from scratch. 
 
-The algorithm works by **Four** steps:
+The algorithm process build from **Four** steps:
 - In order to get the boundary around our 2D points, we must first **sorting** the points, using to their X values.
 
 - Now, we will **divide the calculation**, so that it focuses on a different hull each time, once on the top and once on the bottom, as follows:
