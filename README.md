@@ -37,13 +37,13 @@ You can also see a simple example of how the calculation is done, in each step o
 
 Now, it is also possible to calculate the area of the results hull polygon. The calculation is performed using the following equations, which are used to calculate an irregular polygon area:
 
-<img src="https://render.githubusercontent.com/render/math?math=A=\sum_{i = 1}^{m-1} X_{i}*Y_{j}">
+<img src="https://render.githubusercontent.com/render/math?math=A=\sum_{i = 1}^{m-1} X_{i}*Y_{i%2B1}">
 
-<img src="https://render.githubusercontent.com/render/math?math=B=\sum_{i = 1}^{m-1} X_{j}*Y_{i}">
+<img src="https://render.githubusercontent.com/render/math?math=B=\sum_{i = 1}^{m-1} X_{i%2B1}*Y_{i}">
 
 <img src="https://render.githubusercontent.com/render/math?math=Polygon Area=\frac{A-B}{2}">
 
-When j=i+1, m = number of points in the hull and X&Y coordinates of the hull.
+When m = number of points in the hull and X&Y coordinates of the hull.
 
 You can see example to area calculation in the following figure. It describe Convex-Hull boundary that created around point that sampled inside Unit-Circle. The actual area of the polygon should be close to pi (3.14) and we can see that the calculate area we get is 3.12:
 
