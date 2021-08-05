@@ -7,12 +7,12 @@ ConvexH(points).plot(file=r'outputs\plot1_noraml',rnd=1)
 
 # example 2:
 points = np.load(r'examples\example_2.npy')
-ConvexH(points).plot(file=r'outputs\plot1_circle',rnd=1)
+ConvexH(points).plot(file=r'outputs\plot2_circle',rnd=1)
 
 # example 3:
 points = np.load(r'examples\example_3.npy')
-ConvexH(points).plot(file=r'outputs\plot1_square',rnd=1)
+ConvexH(points).plot(file=r'outputs\plot3_square',rnd=1)
 
 # example 4:
 points = np.load(r'examples\example_4.npy')
-ConvexH(points).plot(file=r'outputs\plot1_hex',rnd=1)
+ConvexH(points).plot(file=r'outputs\plot4_hex',rnd=1)
