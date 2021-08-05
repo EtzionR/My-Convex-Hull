@@ -4,10 +4,14 @@
 # Load Library
 import matplotlib.pyplot as plt
 
-# Define useful function
+# Define useful functions
 # [check if hull last angle invalid or not]
 invalid = lambda p1 ,p2 ,p3: ((p2[0]-p1[0])*(p3[1]-p1[1])) <= ((p2[1]-p1[1])*(p3[0]-p1[0]))
 
+# calculate distance between two points
+dist = lambda p1,p2: (((p1[0]-p2[0])**2)+((p1[1]-p2[1])**2))**.5
+
+# Define Convex Hull Object
 class ConvexH:
     """
 
@@ -27,8 +31,9 @@ class ConvexH:
         """
         self.points = sorted(points, key = lambda x: x[0])
         self.vertex = self.get_hull(self.points )+self.get_hull(self.points[::-1])[1:]
-        self.length = len(self.vertex)
-        self.area = self.calculate_area()
+        self.count  = len(self.vertex)
+        self.area   = self.calculate_area()
+        self.length = self.calculate_len()
 
     def get_hull(self,points):
         """
@@ -49,11 +54,14 @@ class ConvexH:
         calculate the area of the convex hull polygon
         :return: polygon area
         """
-        sum1 = sum([self.vertex[i][1]*self.vertex[i-1][0] for i in range(1,self.length)])
-        sum2 = sum([self.vertex[i][0]*self.vertex[i-1][1] for i in range(1,self.length)])
+        sum1 = sum([self.vertex[i][1]*self.vertex[i-1][0] for i in range(1,self.count)])
+        sum2 = sum([self.vertex[i][0]*self.vertex[i-1][1] for i in range(1,self.count)])
         return (sum1-sum2)/2
 
-    def plot(self,size=6,file=False):
+    def calculate_len(self):
+        return sum([dist(self.vertex[i-1],self.vertex[i]) for i in range(1,self.count)])
+
+    def plot(self,size=6,file=False,rnd=5):
         """
         plot the convex hull results
         :param size: required plot size
@@ -65,7 +73,7 @@ class ConvexH:
         ratio = (max(con_y)-min(con_y))/(max(con_x)-min(con_x))
 
         plt.figure(figsize=(size, size*ratio))
-        plt.title(f'Convex-Hull results:\nCompose of {self.length} points, Area = {int(self.area)}')
+        plt.title(f'Convex-Hull results:\nLength = {round(self.length,rnd)}\nArea = {round(self.area,rnd)}')
         plt.scatter(org_x ,org_y ,s=size,color='b' ,label='original points')
         plt.plot(con_x ,con_y ,color='r' ,label='Convex-Hull boundary')
         plt.legend(fontsize=12)
