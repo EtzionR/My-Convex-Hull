@@ -102,4 +102,4 @@ When the variables displayed are:
 **points:** list or array of 2D x,y coordinates
 
 ## License
-MIT © [Etzion Harari](https://github.com/EtzionData)
+MIT © [Etzion Harari](https://github.com/EtzionR)
