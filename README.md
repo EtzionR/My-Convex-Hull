@@ -43,11 +43,15 @@ Now, it is also possible to calculate the area of the results hull polygon. The 
 
 <img src="https://render.githubusercontent.com/render/math?math=Polygon Area=\frac{A-B}{2}">
 
-When j=i+1, m = length of the hull and X&Y coordinates of the hull.
+When j=i+1, m = number of points in the hull and X&Y coordinates of the hull.
 
 You can see example to area calculation in the following figure. It describe Convex-Hull boundary that created around point that sampled inside Unit-Circle. The actual area of the polygon should be close to pi (3.14) and we can see that the calculate area we get is 3.12:
 
 ![area](https://github.com/EtzionR/My-Convex-Hull/blob/main/pictures/area.png)
+
+The object also calculate the perimeter of the hull (length), by sum all the length of each line in the hull, as you can see in the equation:
+
+<img src="https://render.githubusercontent.com/render/math?math=Length=\sum_{i=1}^{m-1}\sqrt{(X_{j}-X_{i})^{2}+(Y_{j}-Y_{i})^{2}}">
 
 The Convex-Hull object also can also generated as an output plot of the results, in a simple using of the built-in function:
 
@@ -63,7 +67,7 @@ points = np.random.normal(0,1,(100,2))
 ConvexH(points).plot()
 ```
 
-![plot](https://github.com/EtzionR/My-Convex-Hull/blob/main/pictures/plot.png)
+![plot](https://github.com/EtzionR/My-Convex-Hull/blob/main/pictures/plote.png)
 
 ## Libraries
 The code uses the following library in Python:
