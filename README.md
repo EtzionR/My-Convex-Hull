@@ -51,7 +51,7 @@ You can see example to area calculation in the following figure. It describe Con
 
 The object also calculate the perimeter of the hull (length), by sum all the length of each line in the hull, as you can see in the equation:
 
-<img src="https://render.githubusercontent.com/render/math?math=Length=\sum_{i=1}^{m-1}\sqrt{(X_{j}-X_{i})^{2}+(Y_{j}-Y_{i})^{2}}">
+<img src="https://render.githubusercontent.com/render/math?math=Length=\sum_{i=1}^{m-1}\sqrt{(X_{j}-X_{i})^{2}%2B(Y_{j}-Y_{i})^{2}}">
 
 The Convex-Hull object also can also generated as an output plot of the results, in a simple using of the built-in function:
 
