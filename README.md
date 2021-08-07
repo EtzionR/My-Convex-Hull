@@ -2,7 +2,7 @@
 Convex Hull Algorithm, build from scratch ,using the Monotone-Chain method.
 
 ## Overview
-The code [**ch.py**](https://github.com/EtzionR/My-Convex-Hull/blob/main/ch.py) is version of the convex hull algorithm that build from scratch. 
+Convex Hull is the minimum boundary of given set of data points. After it calculated, every point in the given set should be inside the hull, or part of its border. To find this hull, we should use proper convex-hull algorithm. The code [**ch.py**](https://github.com/EtzionR/My-Convex-Hull/blob/main/ch.py) is version of such convex hull 2D algorithm that build from scratch. 
 
 The algorithm process build from **Four** steps:
 - In order to get the boundary around our 2D points, we must first **sorting** the points, using to their X values.
@@ -11,7 +11,7 @@ The algorithm process build from **Four** steps:
 
 &emsp;&emsp; ![upperlower](https://github.com/EtzionR/My-Convex-Hull/blob/main/pictures/upperlower.png)
 
-- We perform the calculation for each such sub-boundary (hull). In order to verify that this we take the desired path, we use **invalid function** (lambda function). This function identifies for each point if there is a better route to it. When a "better path" means relativity lower slope than the slope to the previous point. You can see such example in the following figure:
+- We perform the calculation for each such sub-boundary (hull). In order to verify that we choose the desired path, we use **invalid function** (lambda function). This function identifies for each point if there is a better route to it. When a "better path" means relativity lower slope than the slope to the previous point. You can see such example in the following figure:
 
 &emsp;&emsp; ![better_path](https://github.com/EtzionR/My-Convex-Hull/blob/main/pictures/better.png)
 
