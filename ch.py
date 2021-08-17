@@ -80,4 +80,5 @@ class ConvexH:
         if file: plt.savefig(f'{file}.png')
         plt.show()
 
+# License
 # MIT © Etzion Harari
