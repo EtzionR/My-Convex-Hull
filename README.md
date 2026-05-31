@@ -19,11 +19,11 @@ The algorithm process build from **Four** steps:
 
 &emsp;&emsp;These properties converted into an equations, which can be developed into our **invalid function**: 
 
-&emsp;&emsp; $\frac{Y_{2}-Y_{0}}{\X_{2}-X_{0}}\leq\frac{Y_{1}-Y_{0}}{\X_{1}-X_{0}}$
+$\frac{Y_{2}-Y_{0}}{X_{2}-X_{0}}\leq\frac{Y_{1}-Y_{0}}{X_{1}-X_{0}}$
 
 &emsp;&emsp; Which equal to: 
 
-&emsp;&emsp; $(Y_{2}-Y_{0})*(X_{1}-X_{0})\leq(Y_{1}-Y_{0})*(X_{2}-X_{0})$
+$(Y_{2}-Y_{0})*(X_{1}-X_{0})\leq(Y_{1}-Y_{0})*(X_{2}-X_{0})$
 
 &emsp;&emsp; When in our example, point 7 = (x0,y0), point 8 = (x1,y1) & point 9 = (x2,y2)
 
