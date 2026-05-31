@@ -19,11 +19,11 @@ The algorithm process build from **Four** steps:
 
 &emsp;&emsp;These properties converted into an equations, which can be developed into our **invalid function**: 
 
-&emsp;&emsp;<img src="https://render.githubusercontent.com/render/math?math=\frac{Y_{2}-Y_{0}}{\X_{2}-X_{0}}\leq\frac{Y_{1}-Y_{0}}{\X_{1}-X_{0}}">
+&emsp;&emsp; $\frac{Y_{2}-Y_{0}}{\X_{2}-X_{0}}\leq\frac{Y_{1}-Y_{0}}{\X_{1}-X_{0}}$
 
 &emsp;&emsp; Which equal to: 
 
-&emsp;&emsp;<img src="https://render.githubusercontent.com/render/math?math=(Y_{2}-Y_{0})*(X_{1}-X_{0})\leq(Y_{1}-Y_{0})*(X_{2}-X_{0})">
+&emsp;&emsp; $(Y_{2}-Y_{0})*(X_{1}-X_{0})\leq(Y_{1}-Y_{0})*(X_{2}-X_{0})$
 
 &emsp;&emsp; When in our example, point 7 = (x0,y0), point 8 = (x1,y1) & point 9 = (x2,y2)
 
@@ -51,7 +51,7 @@ You can see example to area calculation in the following figure. It describe Con
 
 The object also calculate the perimeter of the hull (length), by sum all the length of each line in the hull, as you can see in the equation:
 
-<img src="https://render.githubusercontent.com/render/math?math=Length=\sum_{i=1}^{m-1}\sqrt{(X_{i%2B1}-X_{i})^{2}%2B(Y_{i%2B1}-Y_{i})^{2}}">
+$Length=\sum_{i=1}^{m-1}\sqrt{(X_{i%2B1}-X_{i})^{2}%2B(Y_{i%2B1}-Y_{i})^{2}}$
 
 The Convex-Hull object also can also generated as an output plot of the results, in a simple using of the built-in function:
 
